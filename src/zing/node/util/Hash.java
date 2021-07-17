@@ -1,4 +1,4 @@
-package node.zing.util;
+package zing.node.util;
 
 import org.apache.commons.codec.digest.DigestUtils;
 

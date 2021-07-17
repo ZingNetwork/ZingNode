@@ -1,7 +1,7 @@
-package node.zing;
+package zing.node;
 
-import node.zing.network.SocketServer;
-import node.zing.util.Language;
+import zing.node.network.SocketServer;
+import zing.node.util.Language;
 import org.apache.log4j.Logger;
 
 public class Server {

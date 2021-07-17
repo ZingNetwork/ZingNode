@@ -1,6 +1,6 @@
-package node.zing;
+package zing.node;
 
-import node.zing.util.Language;
+import zing.node.util.Language;
 import org.apache.log4j.Logger;
 
 import java.util.Scanner;

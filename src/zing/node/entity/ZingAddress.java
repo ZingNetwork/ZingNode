@@ -1,4 +1,4 @@
-package node.zing.entity;
+package zing.node.entity;
 
 public class ZingAddress {
 

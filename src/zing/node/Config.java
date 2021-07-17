@@ -1,4 +1,4 @@
-package node.zing;
+package zing.node;
 
 import java.io.File;
 import java.io.FileInputStream;

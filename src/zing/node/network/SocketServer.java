@@ -1,4 +1,4 @@
-package node.zing.network;
+package zing.node.network;
 
 import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;
