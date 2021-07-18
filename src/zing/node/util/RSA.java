@@ -9,13 +9,13 @@ import java.security.interfaces.RSAPublicKey;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
-public class RAS {
+public class RSA {
 
     /**
      * 随机生成密钥对
      * @throws NoSuchAlgorithmException
      */
-    public static String[] createKey() throws NoSuchAlgorithmException {
+    public static String[] createKeys() throws NoSuchAlgorithmException {
         // KeyPairGenerator类用于生成公钥和私钥对，基于RSA算法生成对象
         KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("RSA");
         // 初始化密钥对生成器，密钥大小为96-1024位
