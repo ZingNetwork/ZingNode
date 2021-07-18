@@ -3,16 +3,20 @@ package zing.node;
 import zing.node.util.Language;
 import org.apache.log4j.Logger;
 
+import java.io.File;
 import java.util.Scanner;
+import java.util.TimeZone;
 
 public class Node {
 
-    private static Logger logger = Logger.getLogger(Node.class);
+    private static final Logger logger = Logger.getLogger(Node.class);
 
     private static Server server;
 
     public static void main(String[] args) {
         init();
+        TimeZone timeZone = TimeZone.getTimeZone("GMT+8");
+        TimeZone.setDefault(timeZone);
         logger.info(Language.get("begin"));
         logger.info(Language.get("set.lang"));
         logger.info(Language.get("license"));
@@ -43,6 +47,8 @@ public class Node {
             //TODO
         }
         Config.save();
+        File articles = new File("articles");
+        if (!articles.exists()) articles.mkdir();
     }
 
 }
